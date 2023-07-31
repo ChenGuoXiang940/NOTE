@@ -20,6 +20,7 @@
 ## 其他
 > |   | 主控台 | 作用 | 補充 |
 > |:-:|:-:|:-:|:-:|
-> | 1 |scoop update (應用程式名)|更新||
-> | 2 |scoop uninstall (應用程式名)|卸載||
+> | 1 |scoop status|檢查版本更新||
+> | 2 |scoop update|更新||
+> | 3 |scoop uninstall (應用程式名)|卸載||
 
