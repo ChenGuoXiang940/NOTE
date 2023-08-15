@@ -6,12 +6,13 @@
 ## 2.於本機執行以下指令
 > |   | 主控台輸入程式 | 作用 |
 > |--:|:----------:|:----------------:|
-> | 1 |git init|初始化本機此程式碼所在資料夾|
-> | 2 |git add README.md|上傳要關注的檔案|
-> | 3 |git commit -m "first commit"|建立版本訊息為first commit|
-> | 4 |git branch -M main| |
-> | 5 |git remote add origin https://github.com/chen199940/name.git|上傳檔案的網址|
-> | 6 |git push -u origin main|上傳檔案|
+> | 1 |echo "# LeetCode" >> README.md||
+> | 2 |git init|初始化本機此程式碼所在資料夾|
+> | 3 |git add README.md|上傳要關注的檔案|
+> | 4 |git commit -m "first commit"|建立版本訊息為first commit|
+> | 5 |git branch -M main| |
+> | 6 |git remote add origin https://github.com/chen199940/name.git|上傳檔案的網址|
+> | 7 |git push -u origin main|上傳檔案|
 ## 3.還要上傳檔案的話，只需再次執行以下指令
 > |   | 主控台輸入程式 | 作用 |
 > |--:|:----------:|:----------------:|
