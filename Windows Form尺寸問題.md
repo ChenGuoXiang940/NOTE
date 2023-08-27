@@ -27,3 +27,5 @@
  [System.Runtime.InteropServices.DllImport("user32.dll")]
  public static extern bool SetProcessDPIAware();
  ```
+# 參考資源
+[[C#] 在高 DPI 的螢幕上，有些應用程式內的字會模糊的原因以及解決方法！](https://weirenxue.github.io/2021/06/11/cs_dpi/)
