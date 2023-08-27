@@ -1,0 +1,88 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;/*上下外邊距 0，左右外邊距 auto*/
+}
+header,nav,main,footer{
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+}
+header{
+    color: white;
+    background: rgb(127, 127, 206);
+}
+nav>ul{
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+}
+nav>ul>button{
+    display: block;
+    border: 0.5px solid gray;
+    width: 75px;
+    margin: 0 auto;
+    padding: 10px;
+    list-style: none;
+    border: 1px solid silver;
+    text-decoration: none;/*沒有裝飾效果。這是最常見的，用於去除連結的下劃線*/
+    transition: background-color 0.1s ease;/*狀態變化時的過渡效果，包括顏色的過渡。*/
+    border-radius: 5px;
+}
+hr{
+    border-top: 1px solid rgba(0,0,0.2);
+    margin: 50px 0 20px;/*設定元素的上、右、下和左外邊距*/
+}
+footer {
+    text-align: center;
+}
+#title1{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+#title2{
+    text-align: center;
+    margin: 50px 0 20px;
+}
+.gridcontainer{
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr;
+}
+@media screen and (min-width:501px) {
+    .gridcontainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:769px){
+    .gridcontainer{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+.img-photo{
+    max-width: 100%; 
+    height: auto;
+}
+.a-detail{
+    text-decoration: none;
+    color: #0066ff;
+    font-weight: bold;
+}
+.a-about{
+    text-decoration: none;
+    color: #000000;
+    padding: 20px 0;
+}
+.a-back{
+    float: right;
+    text-decoration: none;
+    color: #0066ff;
+    font-family: "Arial";
+}
