@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 定義文件類型，或使用 <meta content="text/html; charset=utf-8"> -->
+    <meta charset="utf-8">
+    <!-- 設定網頁在各種裝置(如手機、平板)上的顯示比例與縮放 -->
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <!-- 設定網頁標題 -->
+    <title>3. 表單</title>
+</head>
+
+<body>
+    <form>
+        <!-- 使用者名稱輸入欄位 -->
+        username: <input type="text" size=20 maxlength=10><br>
+        <!-- 密碼輸入欄位 -->
+        password: <input type="password" maxlength=8><br>
+        <!-- 多選題的核取方塊 -->
+        多選題: <input type="checkbox" checked="checked"><br>
+        <!-- 單選題的單選按鈕 -->
+        單選題: <input type="radio" checked="checked"><hr>
+        <!-- 下拉式選單 -->
+        <select>
+            <!-- 預設選取的選項 -->
+            <option selected>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select><br>
+        <!-- 多行文字輸入框 -->
+        <textarea cols=40></textarea><hr>
+        <!-- 送出按鈕 -->
+        <input type="submit" value="送出">
+        <!-- 清除按鈕 -->
+        <input type="reset" value="清除">
+    </form>
+</body>
+</html>

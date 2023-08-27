@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 960px;
+    height: auto;
+    margin: auto;
+    background: white;
+}
+
+.move-right {
+    margin-left: 8px;
+    /*向右移多少px*/
+}
+
+#title1 {
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+#title2 {
+    color: red;
+}
+
+#title3 {
+    text-align: center;
+    color: blueviolet;
+}
+
+#title4 {
+    font-size: 20px;
+}
+
+main {
+    width: 88%;
+    height: 800px;
+    float: right;
+}
+
+aside {
+    width: 12%;
+    height: 800px;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+}
+
+.button {
+    display: block;
+    border: 0.5px solid gray;
+    width: 110px;
+    padding: 12px;
+    background-color: white;
+    transition: background-color 0.1s ease;
+    /*狀態變化時的過渡效果，包括顏色的過渡。*/
+    cursor: pointer;
+    font-family: "Arial";
+    font-size: 13px;
+}
+
+.img-photo {
+    max-width: 960px;
+    height: 100%;
+}
+
+hr {
+    border-top: 1px solid rgba(0, 0, 0.2);
+    margin: 50px 0 20px;
+}
+
+nav>ul {
+    display: flex;
+    margin-top: 10px;
+}
+
+nav>ul>li {
+    width: auto;
+    margin-right: 10px;
+    padding: 10px;
+    list-style: none;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.a-back {
+    float: right;
+    text-decoration: none;
+    color: #0066ff;
+    font-family: "Arial";
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.slide {
+    max-width: 350px;
+    max-height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    color: #0066ff;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: gray;
+}
