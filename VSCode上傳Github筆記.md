@@ -6,12 +6,12 @@
 在你的本機環境中，執行以下步驟來將程式碼上傳至GitHub。
 |   | 主控台輸入程式 | 作用 |
 |--:|:----------:|:----------------:|
-| 1 |echo "# LeetCode" >> README.md|在這個檔案中添加你的筆記和說明|
+| 1 |echo "# name" >> README.md|在這個name檔案中添加你的筆記和說明|
 | 2 |git init|初始化本機此程式碼所在資料夾|
 | 3 |git add README.md|上傳要關注的檔案|
 | 4 |git commit -m "first commit"|建立版本訊息為first commit|
 | 5 |git branch -M main|建立一個名為"main"的主要分支|
-| 6 |git remote add origin https://github.com/chen199940/name.git|上傳檔案的網址|
+| 6 |git remote add origin https://github.com/chen199940/name.git|在本地數據庫上，加入遠端數據庫|
 | 7 |git push -u origin main|上傳檔案|
 ## 3.還要上傳檔案的話
 如果你需要再次上傳變更或更新你的程式碼和筆記，只需執行以下步驟：
