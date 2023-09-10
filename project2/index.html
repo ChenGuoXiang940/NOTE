@@ -9,17 +9,17 @@
 </head>
 <body>
   <header>
-    <h1 id="title1" onclick="changeText(3)">金融詐騙與資訊攻防戰</h1>
+    <h1 id="title1" onclick="changeText2()">金融詐騙與資訊攻防戰</h1>
     <img src="test_img13f.jpg" class="img-photo" />
     <nav>
       <ul>
         <li>
-          <a href="#" onclick="changeText(0)">假冒機構公務員或警察機構詐財⼿法及預防策略</a>
+          <a href="#" onclick="changeText(0,this.textContent)">假冒機構公務員或警察機構詐財⼿法及預防策略</a>
         </li>
         <li>
-          <a href="#" onclick="changeText(1)">假冒拍賣賣家詐騙預防策略</a>
+          <a href="#" onclick="changeText(1,this.textContent)">假冒拍賣賣家詐騙預防策略</a>
         </li>
-        <li><a href="#" onclick="changeText(2)">假冒銀⾏詐騙預防策略</a></li>
+        <li><a href="#" onclick="changeText(2,this.textContent)">假冒銀⾏詐騙預防策略</a></li>
       </ul>
     </nav>
   </header>
@@ -39,42 +39,15 @@
   </main>
   <aside>
     <h1 class="move-right">犯案類型</h1>
-    <button class="button"
-      onclick="changeContent('主要係指犯罪者利⽤電話連繫被害⼈，謊稱被害⼈已中⼤獎或是藉由恐嚇等⽅式詐騙被害⼈，讓被害⼈在無法辨識真假之情形下交出財物給犯罪者，使被害⼈遭受⾦錢上的損失。','電話詐欺')">
-      (⼀) 電話詐欺
-    </button>
-    <button class="button"
-      onclick="changeContent('由於網路資訊發達，許多⼈陸續開始進⾏網路購物，因此犯罪者便利⽤這⼀ 點經營假網拍騙取⺠眾財產；另外犯罪者亦會向被害⼈謊稱當事⼈帳⼾設定 錯誤遭⼈利⽤等說法，要求被害⼈去 ATM 解除分期付款，因⽽詐騙被害⼈ 錢財等⽅法皆是。','網路詐欺')">
-      (⼆) 網路詐欺
-    </button>
-    <button class="button"
-      onclick="changeContent('這部分主要係指犯罪者假冒檢察官、警察、或公務機關等⾝份威脅被害⼈， 讓被害⼈不敢反抗，並在無法辨識真假情形下將財物交給犯罪者，使被害⼈ 遭受損 失；或是犯罪者亦會假冒親友⾝份跟被害⼈套關係，進⽽讓被害⼈ 失去警惕下被騙取錢財。','假冒名義')">
-      (三) 假冒名義
-    </button>
-    <button class="button"
-      onclick="changeContent('主要係在犯罪者及被害⼈彼此認識之下，犯罪者向被害⼈借錢，之後被害⼈ 要求還錢時屢次找藉⼝拖延，甚⾄不予回應，讓被害⼈認為⾃⼰被詐騙；此外也有犯罪者利⽤標會模式向各被害⼈籌組錢財，等籌到⼀定⾦額後捲款潛 逃，使被害⼈遭到損害。','詐騙款項')">
-      (四) 詐騙款項
-    </button>
-    <button class="button"
-      onclick="changeContent('這部分係犯罪者利⽤電視、雜誌等媒體刊登不實廣告謊稱某物品具有良好功效吸引許多消費者訂購，進⽽使消費者受騙；另外還有店家利⽤送貨包裝時偷將原訂購物品換成另⼀個物品，使消費者無故受到損害。','偽稱買賣')">
-      (五) 偽稱買賣
-    </button>
-    <button class="button"
-      onclick="changeContent('係指犯罪者與被害⼈簽約或訂貨後，當被害⼈完成進度並向犯罪者要求⽀付現⾦時，犯罪者卻找理由拒付該款項，或是賴著不給，讓被害⼈驚覺⾃⼰已遭詐騙。','拒付款項')">
-      (六) 拒付款項
-    </button>
-    <button class="button"
-      onclick="changeContent('主要係指犯罪者利⽤⺠眾想藉由投資股票或基⾦等⽅式快速獲利並致富的⼼理巧妙設計出⼀連串投資上的騙局，讓被害⼈在無預警之情形下將錢財投資下去，進⽽使被害⼈遭受損害。','投資詐欺')">
-      (七) 投資詐欺
-    </button>
-    <button class="button"
-      onclick="changeContent('係指犯罪者設立假公司或統⼀發票營業⼈⾝份，讓被害⼈在不知情的狀況下與他們做交易往來，等到被害⼈發現時犯罪者早已不⾒蹤影，進⽽使被害⼈無故遭受⾦錢上的損失。','虛設⾏號')">
-      (八) 虛設⾏號
-    </button>
-    <button class="button"
-      onclick="changeContent('係指犯罪者與被害⼈有簽約或訂貨，並在被害⼈完成進度後開立⽀票給被害⼈，但實際上該⽀票為空頭⽀票(亦即俗稱的「芭樂票」)，等到被害⼈要兌現時才驚覺⾃⼰已遭詐騙。','票據(空頭)')">
-      (九) 票據(空頭)
-    </button>
+    <button class="button"onclick="changeText1(0,this.textContent)">(⼀) 電話詐欺</button>
+    <button class="button"onclick="changeText1(1,this.textContent)">(⼆) 網路詐欺</button>
+    <button class="button"onclick="changeText1(2,this.textContent)">(三) 假冒名義</button>
+    <button class="button"onclick="changeText1(3,this.textContent)">(四) 詐騙款項</button>
+    <button class="button"onclick="changeText1(4,this.textContent)">(五) 偽稱買賣</button>
+    <button class="button"onclick="changeText1(5,this.textContent)">(六) 拒付款項</button>
+    <button class="button"onclick="changeText1(6,this.textContent)">(七) 投資詐欺</button>
+    <button class="button"onclick="changeText1(7,this.textContent)">(八) 虛設⾏號</button>
+    <button class="button"onclick="changeText1(8,this.textContent)">(九) 票據(空頭)</button>
   </aside>
   <footer>
     <hr />
@@ -86,10 +59,9 @@
       <textarea id="message" name="message" required></textarea><br />
       <button type="submit">提交回饋</button>
     </form>
-    <p>網頁設計與維護:陳國翔</p>
     <p>聯絡資訊:chen199940@gmail.com</p>
-    <p>開發完成:2023/7/28</p>
-    <p>最後更新:2023/8/27</p>
+    <p>開發完成:2023/07/28</p>
+    <p>最後更新:2023/09/10</p>
     <a class="a-back" href="#">Back to Top</a>
   </footer>
   <script src="script.js"></script>

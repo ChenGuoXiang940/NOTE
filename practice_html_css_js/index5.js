@@ -1,4 +1,3 @@
-//如果你想要多個按鈕在滑鼠移動到上面時更換顏色，為每個按鈕添加相應的事件監聽器
 const buttons = document.querySelectorAll("button");
 buttons.forEach(function (button) {
   button.addEventListener("mouseenter", function () {
@@ -8,7 +7,3 @@ buttons.forEach(function (button) {
     button.style.backgroundColor = 'white';
   });
 });
-//超連結URL
-function redirectToPage(url) {
-  window.location.href = url;
-}
