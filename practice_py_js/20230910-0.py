@@ -8,5 +8,5 @@ def main():
     arr=[1,5,10,50,100]
     key=50
     print(F"二分搜結果:{bs(arr,0,len(arr)-1,key)}")
-if __name__=="__main__":
+if __name__=="__main__:":
     main()

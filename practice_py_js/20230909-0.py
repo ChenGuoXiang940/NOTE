@@ -14,6 +14,6 @@ def getsum1(list):
 def main():
     arr=[5,7,3,8,10]
     print(F"(遞迴)序列總和:{getsum(arr)}")
-    print(F"(迴圈)序列總和:{getsum1(arr)}")
+    print(F"(迴圈)序列總和:{getsum1(arr)}") 
 if __name__=="__main__":
     main()
