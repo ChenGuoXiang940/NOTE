@@ -18,7 +18,7 @@ header{
     background: rgb(127, 127, 206);
 }
 nav>ul{
-    display: flex;
+    display: flex;/*flex:物件在左右，block:上下*/
     margin-top: 20px;
     text-align: center;
 }

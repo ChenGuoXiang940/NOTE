@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, inital-scale=1" />
   <link rel="stylesheet" href="style.css" type="text/css" />
   <title>金融詐騙與資訊攻防戰</title>
@@ -30,24 +29,24 @@
     <a class="next" onclick="changeSlide(1)">右張</a>
     <p id="content"></p>
     <div class="slideshow">
-      <img src="test_img02.jpg" alt="Photo 1" class="slide">
-      <img src="test_img04.jpg" alt="Photo 2" class="slide">
-      <img src="test_img22.jpg" alt="Photo 3" class="slide">
-      <img src="test_img30.jpg" alt="Photo 4" class="slide">
-      <img src="test_img36.jpg" alt="Photo 5" class="slide">
+      <img src="test_img02.jpg" class="slide">
+      <img src="test_img04.jpg" class="slide">
+      <img src="test_img22.jpg" class="slide">
+      <img src="test_img30.jpg" class="slide">
+      <img src="test_img36.jpg" class="slide">
     </div>
   </main>
   <aside>
     <h1 class="move-right">犯案類型</h1>
-    <button class="button"onclick="changeText1(0,this.textContent)">(⼀) 電話詐欺</button>
-    <button class="button"onclick="changeText1(1,this.textContent)">(⼆) 網路詐欺</button>
-    <button class="button"onclick="changeText1(2,this.textContent)">(三) 假冒名義</button>
-    <button class="button"onclick="changeText1(3,this.textContent)">(四) 詐騙款項</button>
-    <button class="button"onclick="changeText1(4,this.textContent)">(五) 偽稱買賣</button>
-    <button class="button"onclick="changeText1(5,this.textContent)">(六) 拒付款項</button>
-    <button class="button"onclick="changeText1(6,this.textContent)">(七) 投資詐欺</button>
-    <button class="button"onclick="changeText1(7,this.textContent)">(八) 虛設⾏號</button>
-    <button class="button"onclick="changeText1(8,this.textContent)">(九) 票據(空頭)</button>
+    <button class="button id-1"onclick="changeText1(0,this.textContent)">(⼀) 電話詐欺</button>
+    <button class="button id-2"onclick="changeText1(1,this.textContent)">(⼆) 網路詐欺</button>
+    <button class="button id-1"onclick="changeText1(2,this.textContent)">(三) 假冒名義</button>
+    <button class="button id-2"onclick="changeText1(3,this.textContent)">(四) 詐騙款項</button>
+    <button class="button id-1"onclick="changeText1(4,this.textContent)">(五) 偽稱買賣</button>
+    <button class="button id-2"onclick="changeText1(5,this.textContent)">(六) 拒付款項</button>
+    <button class="button id-1"onclick="changeText1(6,this.textContent)">(七) 投資詐欺</button>
+    <button class="button id-2"onclick="changeText1(7,this.textContent)">(八) 虛設⾏號</button>
+    <button class="button id-1"onclick="changeText1(8,this.textContent)">(九) 票據(空頭)</button>
   </aside>
   <footer>
     <hr />
@@ -59,14 +58,14 @@
       <textarea id="message" name="message" required></textarea><br />
       <button type="submit">提交回饋</button>
     </form>
-    <p>聯絡資訊:chen199940@gmail.com</p>
-    <p>開發完成:2023/07/28</p>
-    <p>最後更新:2023/09/10</p>
+    <a>聯絡資訊:chen199940@gmail.com</a> | 
+    <a>開發完成:2023/07/28</a> | 
+    <a>最後更新:2023/09/10</a>
     <a class="a-back" href="#">Back to Top</a>
   </footer>
   <script src="script.js"></script>
   <script>
-    var element = document.getElementById("content");
+    let element = document.getElementById("content");
     element.innerText = str[3];
   </script>
 </body>

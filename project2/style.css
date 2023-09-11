@@ -13,8 +13,8 @@ body {
 }
 
 .move-right {
-    margin-left: 8px;
     /*向右移多少px*/
+    margin-left: 8px;
 }
 
 #title1 {
@@ -50,6 +50,7 @@ aside {
 footer {
     width: 100%;
     clear: both;
+    text-align: center;
 }
 
 .button {
@@ -88,7 +89,6 @@ nav>ul>li {
     border: 1px solid silver;
     border-radius: 5px;
 }
-
 .a-back {
     float: right;
     text-decoration: none;

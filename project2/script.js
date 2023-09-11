@@ -32,15 +32,22 @@ function changeText2(){
   var element = document.getElementById("content");
   element.innerText = str[3];
 }
-//如果你想要多個按鈕在滑鼠移動到上面時更換顏色，為每個按鈕添加相應的事件監聽器
+//如果你想要多個按鈕在滑鼠移動到上面時更換外框顏色，為每個按鈕添加相應的事件監聽器
 let buttons = document.querySelectorAll(".button");
 buttons.forEach(function (button) {
   button.addEventListener("mouseenter", function () {
-    button.style.backgroundColor = '#ADD8E6';
+    button.style.borderColor = '#ADD8E6';
   });
   button.addEventListener("mouseleave", function () {
-    button.style.backgroundColor = "white";
+    button.style.borderColor = "black";
   });
+});
+buttons.forEach(function (button) {
+  if (button.classList.contains("id-1")) {
+    button.style.backgroundColor = '#FF9DC7';
+  } else if (button.classList.contains("id-2")) {
+    button.style.backgroundColor = '#D29D9D';
+  }
 });
 //照片依指定的時間更換與循環，也可讓使用者往前往一張或後一張做瀏覽
 let slideIndex = 0;
@@ -57,5 +64,5 @@ function changeSlide(n) {
 }
 setInterval(() => {
   changeSlide(1);
-}, 5000);
+}, 5000)
 showSlide(slideIndex);
