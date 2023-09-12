@@ -21,16 +21,22 @@ function changeText(index,text_title) {
   title3Element.innerText = text_title
   let contentElement = document.getElementById("content");
   contentElement.textContent = str[index];
+  contentElement.style.color = 'blue';
+  contentElement.style.border = '2px solid blue';
 }
 function changeText1(index, text_title) {
   title3Element.innerText = "犯案類型»" + text_title.substring(3);
   let contentElement = document.getElementById("content");
   contentElement.textContent = str1[index];
+  contentElement.style.color = 'black';
+  contentElement.style.border = '2px solid black';
 }
 function changeText2(){
   title3Element.innerText="詐欺案件概況分析"
   var element = document.getElementById("content");
   element.innerText = str[3];
+  contentElement.style.color = 'blue';
+  contentElement.style.border = '2px solid blue';
 }
 //如果你想要多個按鈕在滑鼠移動到上面時更換外框顏色，為每個按鈕添加相應的事件監聽器
 let buttons = document.querySelectorAll(".button");
