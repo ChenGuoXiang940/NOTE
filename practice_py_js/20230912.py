@@ -1,3 +1,4 @@
+#實作迴圈找最大與最小值
 import random
 import sys
 def write(msg,my_list):

@@ -1,3 +1,4 @@
+//二分搜
 function bs(list,left,right,key){
     if(left>right)return -1
     const mid=Math.floor(left+(right-left)/2)

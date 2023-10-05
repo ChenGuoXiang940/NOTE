@@ -1,3 +1,4 @@
+//排序法
 function getRandom(x){
     return Math.floor(Math.random()*x);
 };

@@ -1,3 +1,4 @@
+#得到陣列總和
 def getsum(list):
    if len(list) == 1:
         return list[0]

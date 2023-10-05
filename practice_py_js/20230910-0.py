@@ -1,3 +1,4 @@
+#二分搜
 def bs(list,left,right,key):
     if left>right:return -1
     mid=int(left+(right-left)/2)

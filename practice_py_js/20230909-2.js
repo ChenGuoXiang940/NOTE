@@ -1,3 +1,4 @@
+//數字排列組合
 function dfs(check,iterate){
     if(iterate==arr.length){
         console.log(int_array)

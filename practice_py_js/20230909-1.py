@@ -1,3 +1,4 @@
+#數字排列組合
 int_array = [0] * 10
 def dfs(check,iterate,arr):
     if iterate==len(arr):
