@@ -11,7 +11,7 @@ def dfs(check,iterate,arr):
         dfs(check,iterate+1,arr)
         check[i]=False
 def main():
-    arr=[1,2,3]
+    arr=[1,2,3,4,5,6]
     dfs([False] * len(arr),0,arr)
 if __name__ == "__main__":
     main()
