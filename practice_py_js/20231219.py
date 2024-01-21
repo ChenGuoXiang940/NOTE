@@ -1,3 +1,4 @@
+#泡沫排序法
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -6,7 +7,7 @@ def bubble_sort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
-# Selection Sort
+#選擇排序法
 def selection_sort(arr):
     for i in range(len(arr)):
         min_idx = i
@@ -15,8 +16,7 @@ def selection_sort(arr):
                 min_idx = j
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     return arr
-
-# Insertion Sort
+#插入排序法
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -26,8 +26,7 @@ def insertion_sort(arr):
                 j -= 1
         arr[j+1] = key
     return arr
-
-# Shell Sort
+#希爾排序法
 def shell_sort(arr):
     n = len(arr)
     gap = n//2
@@ -41,8 +40,7 @@ def shell_sort(arr):
             arr[j] = temp
         gap //= 2
     return arr
-
-# Merge Sort
+#合併排序法
 def merge_sort(arr):
     if len(arr) >1:
         mid = len(arr)//2
@@ -68,8 +66,7 @@ def merge_sort(arr):
             j+=1
             k+=1
     return arr
-
-# Quick Sort
+#快速排序法
 def partition(arr, low, high):
     i = (low-1)
     pivot = arr[high]
@@ -85,8 +82,7 @@ def quick_sort(arr, low, high):
         pi = partition(arr, low, high)
         quick_sort(arr, low, pi-1)
         quick_sort(arr, pi+1, high)
-
-# Heap Sort
+#堆積排序法
 def heapify(arr, n, i):
     largest = i
     l = 2 * i + 1
@@ -106,8 +102,7 @@ def heap_sort(arr):
     for i in range(n-1, 0, -1):
         arr[i], arr[0] = arr[0], arr[i]
         heapify(arr, i, 0)
-
-# Counting Sort
+#計數排序法
 def counting_sort(arr, max_val):
     m = max_val + 1
     count = [0] * m                
@@ -119,8 +114,7 @@ def counting_sort(arr, max_val):
             arr[i] = a
             i += 1
     return arr
-
-# Bucket Sort
+#桶子排序法
 def insertion_sort_bucket(b):
     for i in range(1, len(b)):
         up = b[i]
@@ -129,8 +123,7 @@ def insertion_sort_bucket(b):
             b[j + 1] = b[j]
             j -= 1
         b[j + 1] = up      
-    return b      
-            
+    return b            
 def bucket_sort(x):
     arr = []
     slot_num = max(x) + 1  # Ensure there are enough buckets
@@ -147,8 +140,7 @@ def bucket_sort(x):
             x[k] = arr[i][j]
             k += 1
     return x
-
-# Radix Sort
+#基數排序法
 def counting_sort_radix(arr, exp1):
     n = len(arr)
     output = [0] * (n)
@@ -167,7 +159,6 @@ def counting_sort_radix(arr, exp1):
     i = 0
     for i in range(0,len(arr)):
         arr[i] = output[i]
-
 def radixsort(arr):
     max1 = max(arr)
     exp = 1
@@ -193,6 +184,5 @@ def main():
     print("Bucket Sort: ", bucket_sort(arr))
     radixsort(arr3)
     print("Radix Sort: ",arr3)
-
 if __name__=="__main__":
     main()
