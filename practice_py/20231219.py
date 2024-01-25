@@ -184,5 +184,8 @@ def main():
     print("Bucket Sort: ", bucket_sort(arr))
     radixsort(arr3)
     print("Radix Sort: ",arr3)
+    #對於這100個數字，快速排序在迴圈、判斷和交換的次數上都表現得相對較好。
+    #快速排序的時間複雜度為O(nlogn)
+    #這並不意味著它們在所有情況下都是最好的選擇。最好的排序算法取決於具體的應用場景，包括數據的大小、是否已經部分排序、數據的分佈等因素。
 if __name__=="__main__":
     main()

@@ -11,7 +11,6 @@
         <button>發布</button>
         <p>留言區:</p>
         <ul></ul>
-        <script src="index4.js"></script>
     </body>
     <style>
         textarea {
@@ -36,4 +35,33 @@
             float: right;
         }
     </style>
+    <script>
+        //獲取元素
+        const ul = document.querySelector('ul');
+        const text = document.querySelector('textarea');
+        const btn = document.querySelector('button');
+        //綁定事件 (onclick 被點擊時)
+        btn.onclick = function() {
+            //獲取元素的值
+            if (text.value == '') {
+                alert('您沒有輸入內容!');
+                return false;
+            }else {
+                //創建元素
+                let li = document.createElement('li');
+                //添加元素
+                li.innerHTML = text.value + "<a href='javascript:;'>刪除</a>";
+                //添加到指定位置
+                ul.insertBefore(li,ul.children[0]);
+                //清空文本框
+                let as = document.querySelectorAll('a');
+                for (let i = 0;i < as.length;i++) {
+                    as[i].onclick = function() {
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+                return true;
+            }
+        }
+    </script>
 </html>
