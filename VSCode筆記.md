@@ -64,7 +64,7 @@ Visual Studio Code（簡稱 VSCode）是一款功能強大且廣泛使用的程�
 		"description": ""
 	  }
 ```
-1. `description` ： 在這個例子中，你會輸入 "cpp"，然後按 `Tab` 來插入程式碼片段。
+1. `prefix` ： 在這個例子中，你會輸入 "cpp"，然後按 `Tab` 來插入程式碼片段。
 2. `body` ： 定義程式碼片段的內容。在這個例子中，程式碼片段是一個基本的 C++ 程式範本。
 3. `description` ： 這個描述會在自動完成下拉選單中顯示。
 ## <p align="center">主控台</p>
