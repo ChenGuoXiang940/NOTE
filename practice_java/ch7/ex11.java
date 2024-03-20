@@ -1,6 +1,6 @@
 package practice_java.ch7;
 
-public class ch11 {
+public class ex11 {
     public static void main(String[] args) {
         int[] arr = {12, 7, 32, 67};
         System.out.println(smallest(8, 9));
