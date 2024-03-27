@@ -1,0 +1,122 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ex19",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.EX19.ex19",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex18",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.EX18.ex18",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex17",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.EX17.ex17",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex16",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.EX16.ex16",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex15",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.EX15.ex15",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex14",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.EX14.ex14",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex13",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.EX13.ex13",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex12",
+      "request": "launch",
+      "mainClass": "ex12",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex12",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.EX12.ex12",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex12",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.ex12",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex11",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.ex11",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex10",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.ex10",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex9",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.ex9",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "type": "java",
+      "name": "ex8",
+      "request": "launch",
+      "mainClass": "practice_java.ch9.ex8",
+      "projectName": "NOTE_a457860"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
