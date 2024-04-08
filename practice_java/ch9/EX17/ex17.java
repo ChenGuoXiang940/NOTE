@@ -1,4 +1,4 @@
-package practice_java.ch9.EX17;
+package EX17;
 class Circle{
     private double radius;
     Circle(double r){

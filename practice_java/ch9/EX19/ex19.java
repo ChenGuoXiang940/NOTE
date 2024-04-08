@@ -1,4 +1,4 @@
-package practice_java.ch9.EX19;
+package EX19;
 class Data{
     private String name;
     private Test score;

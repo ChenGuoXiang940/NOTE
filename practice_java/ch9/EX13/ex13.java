@@ -1,4 +1,4 @@
-package practice_java.ch9.EX13;
+package EX13;
 class Fraction{
     private int num,den;
     Fraction(int n,int d){

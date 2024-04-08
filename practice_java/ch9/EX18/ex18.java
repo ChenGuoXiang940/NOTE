@@ -1,4 +1,4 @@
-package practice_java.ch9.EX18;
+package EX18;
 class Phone{
     String tel;
     String mobile;

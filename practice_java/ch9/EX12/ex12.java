@@ -1,3 +1,4 @@
+package EX12;
 class Fraction{
     private int num,den;
     Fraction(int n,int d){

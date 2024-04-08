@@ -3,7 +3,7 @@
 ## <p align="center">內容</p>
 此倉庫包含以下內容：
 
-`practice_java`資料夾
+- `practice_java`資料夾
 > 大一下程式設計習題。
 - `practice_html_css_js` 資料夾
 > 用於提升我的 HTML、CSS和 JavaScript 技能。這些項目都包含了詳細的註釋，以幫助理解我在編碼過程中的思考過程。另外，可以參考我的個人靜態網站 [GitHub Pages](https://chenguoxiang940.github.io/)。
