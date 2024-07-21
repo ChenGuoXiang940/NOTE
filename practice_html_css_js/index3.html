@@ -6,7 +6,7 @@
         <title>3.表單</title>
     </head>
     <body>
-        <form>
+        <form><!--- form action="submit_form.php" method="post"> 通過 HTTP POST 請求發送 -->
             <!-- 使用者名稱輸入欄位 -->
             username: <input type="text" size=20 maxlength=10><br>
             <!-- 密碼輸入欄位 -->
@@ -31,4 +31,21 @@
             <input type="reset" value="清除">
         </form>
     </body>
+    <style>
+        form{
+            text-align: center;
+        }
+    </style>
+    <script>
+        //獲取元素
+        const form = document.querySelector('form');
+        //綁定事件 (onsubmit 送出表單時)
+        form.onsubmit = function() {
+            alert('表單已送出');
+        }
+        //綁定事件 (onreset 清除表單時)
+        form.onreset = function() {
+            alert('表單已清除');
+        }
+    </script>
 </html>

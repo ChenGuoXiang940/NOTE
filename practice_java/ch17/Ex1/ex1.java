@@ -4,6 +4,7 @@ public class ex1 {
     public static void main(String[] args) {
         JFrame frame = new JFrame("My Frame");
         frame.setSize(250, 120);
+        frame.setLayout(null);
         frame.getContentPane().setBackground(java.awt.Color.PINK);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>8.下拉選單</title>
+    </head>
+    <body>
+        <div class="top">
+            <p>下拉選單</p>
+            <div class="buttons">
+                <button>Button 1</button>
+                <button>Button 2</button>
+                <button>Button 3</button>
+                <button>Button 4</button>
+                <button>Button 5</button>
+                <button>Button 6</button>
+            </div>
+        </div>
+        <p>這是一個下拉選單的範例，如果你的滑鼠在 Button 上或隱藏的範圍停留，會顯示它的下拉選單</p>
+    </body>
+    <style>
+        .top {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+        
+        .buttons {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: grid;
+            background-color: lightslategray;
+        }     
+        button{
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .top:hover .buttons {
+            opacity: 1;
+        }
+    </style>
+    <script>
+        btns=document.querySelectorAll('button');
+        btns.forEach((bn,index)=>{
+            bn.addEventListener('click',()=>{
+                alert(`Button ${index+1}`);
+            });
+        });
+    </script>
+</html>
