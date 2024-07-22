@@ -17,3 +17,8 @@ module adder (x, y,cin,sum,carry);
   assign sum=wire1^cin;
   assign carry=(wire1&cin)|(x&y);
 endmodule
+/*
+sum = x ^ y ^ cin
+carry = (x & y) | (y & cin) | (x & cin)
+全加器考慮進位，半加器不考慮進位，只考慮兩個輸入的和，所以全加器比半加器多了一個進位的輸入。
+*/
