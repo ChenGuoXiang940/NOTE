@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>9.右側邊攔</title>
+    </head>
+    <body>
+        <p onclick="turnRight()" class="bn">Button</p>
+        <p>按下 Button 會顯示或關閉右側邊欄</p>
+        <div class="right">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+            <button>Button 4</button>
+            <button>Button 5</button>
+            <button>Button 6</button>
+        </div>
+    </body>
+    <style>
+        .bn{
+            position: relative;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+        .right {
+            position: fixed;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 100%;
+            background-color: lightblue;
+            transition: right 0.3s;
+        }
+        .right button{
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            height: 50px;
+        }
+        .right button:hover{
+            background-color: lightcoral;
+        }
+        .right.show {
+            right: 0;
+        }
+    </style>
+    <script>
+        const right = document.querySelector('.right');
+        function turnRight(){
+            right.classList.toggle('show');
+        }
+        const buttons = document.querySelectorAll('.right button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert(button.textContent);
+            });
+        });
+    </script>
+</html>

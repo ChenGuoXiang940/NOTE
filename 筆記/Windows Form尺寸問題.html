@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Windows Form 尺寸問題</title>
+    <style>
+      /* From extension vscode.github */
+      /*---------------------------------------------------------------------------------------------
+      *  Copyright (c) Microsoft Corporation. All rights reserved.
+      *  Licensed under the MIT License. See License.txt in the project root for license information.
+      *--------------------------------------------------------------------------------------------*/
+
+      .vscode-dark img[src$="\#gh-light-mode-only"],
+      .vscode-light img[src$="\#gh-dark-mode-only"],
+      .vscode-high-contrast:not(.vscode-high-contrast-light)
+        img[src$="\#gh-light-mode-only"],
+      .vscode-high-contrast-light img[src$="\#gh-dark-mode-only"] {
+        display: none;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css"
+    />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
+          system-ui, "Ubuntu", "Droid Sans", sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    </style>
+    <style>
+      .task-list-item {
+        list-style-type: none;
+      }
+
+      .task-list-item-checkbox {
+        margin-left: -20px;
+        vertical-align: middle;
+        pointer-events: none;
+      }
+    </style>
+    <style>
+      :root {
+        --color-note: #0969da;
+        --color-tip: #1a7f37;
+        --color-warning: #9a6700;
+        --color-severe: #bc4c00;
+        --color-caution: #d1242f;
+        --color-important: #8250df;
+      }
+    </style>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-note: #2f81f7;
+          --color-tip: #3fb950;
+          --color-warning: #d29922;
+          --color-severe: #db6d28;
+          --color-caution: #f85149;
+          --color-important: #a371f7;
+        }
+      }
+    </style>
+    <style>
+      .markdown-alert {
+        padding: 0.5rem 1rem;
+        margin-bottom: 16px;
+        color: inherit;
+        border-left: 0.25em solid #888;
+      }
+
+      .markdown-alert > :first-child {
+        margin-top: 0;
+      }
+
+      .markdown-alert > :last-child {
+        margin-bottom: 0;
+      }
+
+      .markdown-alert .markdown-alert-title {
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        line-height: 1;
+      }
+
+      .markdown-alert .markdown-alert-title .octicon {
+        margin-right: 0.5rem;
+        display: inline-block;
+        overflow: visible !important;
+        vertical-align: text-bottom;
+        fill: currentColor;
+      }
+
+      .markdown-alert.markdown-alert-note {
+        border-left-color: var(--color-note);
+      }
+
+      .markdown-alert.markdown-alert-note .markdown-alert-title {
+        color: var(--color-note);
+      }
+
+      .markdown-alert.markdown-alert-important {
+        border-left-color: var(--color-important);
+      }
+
+      .markdown-alert.markdown-alert-important .markdown-alert-title {
+        color: var(--color-important);
+      }
+
+      .markdown-alert.markdown-alert-warning {
+        border-left-color: var(--color-warning);
+      }
+
+      .markdown-alert.markdown-alert-warning .markdown-alert-title {
+        color: var(--color-warning);
+      }
+
+      .markdown-alert.markdown-alert-tip {
+        border-left-color: var(--color-tip);
+      }
+
+      .markdown-alert.markdown-alert-tip .markdown-alert-title {
+        color: var(--color-tip);
+      }
+
+      .markdown-alert.markdown-alert-caution {
+        border-left-color: var(--color-caution);
+      }
+
+      .markdown-alert.markdown-alert-caution .markdown-alert-title {
+        color: var(--color-caution);
+      }
+    </style>
+  </head>
+  <body class="vscode-body vscode-light">
+    <span
+      id="markdown-mermaid"
+      aria-hidden="true"
+      data-dark-mode-theme="dark"
+      data-light-mode-theme="default"
+    ></span>
+    <h1 id="windows-form-尺寸問題">
+      <p align="center">Windows Form 尺寸問題</p>
+    </h1>
+    <h2 id="介紹"><p align="center">介紹</p></h2>
+    <p>
+      本文介紹了在 Windows Forms 應用程式中處理高 DPI
+      螢幕下的字體模糊問題，並提供了一段 C# 程式碼示例，以確保應用程式在不同 DPI
+      設定下正常運作。
+    </p>
+    <h2 id="問題背景"><p align="center">問題背景</p></h2>
+    <p>
+      許多早期的 Windows Forms 應用程式並未考慮到高 DPI
+      螢幕的存在，導致在這些高解析度螢幕上顯示的內容模糊。這是因為在早期的作業系統中，螢幕解析度主要是
+      96 DPI，而現代高 DPI 螢幕可以達到 120、144 或 192
+      DPI。這種差異會影響應用程式介面的大小和字體的清晰度。
+    </p>
+    <h2 id="解決方案"><p align="center">解決方案</p></h2>
+    <p>
+      為了解決高 DPI 螢幕下的字體模糊問題，我們可以使用以下步驟來優化 Windows
+      Forms 應用程式。
+    </p>
+    <ol>
+      <li>
+        <code>啟用 DPI 感知</code>： 確保應用程式能夠正確識別和適應不同的 DPI
+        設定。在較新的 Windows 版本中，可以使用 DPI 感知技術來處理這個問題。
+      </li>
+      <li>
+        <code>使用 DPI 虛擬化</code>： 當應用程式未明確聲明其支援的 DPI
+        時，Windows 使用 DPI 虛擬化來自動縮放應用程式介面。這意味著應用程式會以
+        96 DPI 渲染，然後根據實際 DPI 進行縮放。然而，這可能導致模糊的顯示效果。
+      </li>
+    </ol>
+    <blockquote>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align: center">名稱</th>
+            <th style="text-align: center">說明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center">DPI</td>
+            <td style="text-align: center">
+              越大 DPI 的螢幕，可以使用更多像素來顯示一張圖
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">pt</td>
+            <td style="text-align: center">全形文字的 72 pt = 1 inch</td>
+          </tr>
+        </tbody>
+      </table>
+    </blockquote>
+    <h2 id="如何讓-c-設計出來的視窗字體不會模糊">
+      <p align="center">如何讓 C# 設計出來的視窗字體不會模糊</p>
+    </h2>
+    <p>
+      如果作業系統版本大於等於 Windows Vista（版本號 &gt;= 6），啟用 DPI 感知
+    </p>
+    <pre><code class="language-cs"> [<span class="hljs-meta">STAThread</span>]
+ <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>()</span>
+ {
+    <span class="hljs-keyword">if</span> (Environment.OSVersion.Version.Major &gt;= <span class="hljs-number">6</span>)
+        SetProcessDPIAware();
+    Application.EnableVisualStyles();
+    Application.SetCompatibleTextRenderingDefault(<span class="hljs-literal">false</span>);
+    Application.Run(<span class="hljs-keyword">new</span> Form1());
+ }
+ [<span class="hljs-meta">System.Runtime.InteropServices.DllImport(<span class="hljs-string">&quot;user32.dll&quot;</span>)</span>]
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">extern</span> <span class="hljs-built_in">bool</span> <span class="hljs-title">SetProcessDPIAware</span>()</span>;
+</code></pre>
+    <h2 id="參考資源"><p align="center">參考資源</p></h2>
+    <p>
+      <a href="https://weirenxue.github.io/2021/06/11/cs_dpi/"
+        >C# 在高 DPI 的螢幕上，有些應用程式內的字會模糊的原因以及解決方法！</a
+      >
+    </p>
+  </body>
+</html>

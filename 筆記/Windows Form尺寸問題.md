@@ -13,7 +13,7 @@
 > |pt|全形文字的 72 pt = 1 inch |
 ## <p align="center">如何讓 C# 設計出來的視窗字體不會模糊</p>
 如果作業系統版本大於等於 Windows Vista（版本號 >= 6），啟用 DPI 感知
-```cs
+``` cs
  [STAThread]
  static void Main()
  {

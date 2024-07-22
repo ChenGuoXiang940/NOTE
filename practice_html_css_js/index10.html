@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>10.彈出表單</title>
+    </head>
+    <body>
+        <p onclick="turnRight()" class="bn">Button</p>
+        <p>按下 Button 會顯示或關閉中間的表單</p>
+        <div class="center">
+            <p>請填寫以下表單</p>
+            <form>
+                <input type="text" placeholder="請輸入姓名">
+                <input type="text" placeholder="請輸入電話">
+                <input type="text" placeholder="請輸入地址">
+                <button>送出</button>
+            </form>
+        </div>
+    </body>
+    <style>
+        .bn{
+            position: relative;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+        .center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 400px;
+            background-color: lightblue;
+            display: none;
+        }
+        .center p {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .center form {
+            padding: 20px;
+        }
+        .center input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        .center button {
+            width: 100%;
+            height: 40px;
+            background-color: lightcoral;
+            border: none;
+            cursor: pointer;
+        }
+        .center button:hover {
+            background-color: lightblue;
+        }
+    </style>
+    <script>
+        const center = document.querySelector('.center');
+        function turnRight(){
+            center.style.display = center.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</html>
