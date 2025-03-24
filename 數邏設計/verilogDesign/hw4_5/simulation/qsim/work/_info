@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\verilogDesign\hw4_5\simulation\qsim
+vHALF_ADDER
+Z1 I5UV2@zT]McZ3^Yb[80llA1
+Z2 VooFSYUeUTN5@KA5Sn1b0<2
+Z3 dC:\verilogDesign\hw4_5\simulation\qsim
+Z4 w1742193299
+Z5 8HALF_ADDER.vo
+Z6 FHALF_ADDER.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@h@a@l@f_@a@d@d@e@r
+!i10b 1
+Z10 !s100 9zl93BDE6]VFiM=aL;DMV1
+!s85 0
+Z11 !s108 1742193300.105000
+Z12 !s107 HALF_ADDER.vo|
+Z13 !s90 -work|work|HALF_ADDER.vo|
+!s101 -O0
+vHALF_ADDER_vlg_check_tst
+!i10b 1
+!s100 ac36@539Z__:05USCZXnb2
+I;@7`m=52TjQ@72iPURGLc0
+V4OK@<jBcO1>I]QeQRQfBM0
+R3
+Z14 w1742193298
+Z15 8HALF_ADDER.vt
+Z16 FHALF_ADDER.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1742193300.249000
+Z18 !s107 HALF_ADDER.vt|
+Z19 !s90 -work|work|HALF_ADDER.vt|
+!s101 -O0
+R8
+n@h@a@l@f_@a@d@d@e@r_vlg_check_tst
+vHALF_ADDER_vlg_sample_tst
+!i10b 1
+!s100 Z;9;izeKFXS:J230b0afb1
+IcR`4Qc]T08f1A;2>;JXOd3
+VO:aAVAaCX^InbgnLQ;oJK1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@h@a@l@f_@a@d@d@e@r_vlg_sample_tst
+vHALF_ADDER_vlg_vec_tst
+!i10b 1
+!s100 DmQ`e?Q7lhf^IHlSUgN@X2
+INdJlNS5SlSZ:V;a0U`d7l1
+Vig0X@4L:X^zf;EAheiQJc1
+R3
+R14
+R15
+R16
+L0 181
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@h@a@l@f_@a@d@d@e@r_vlg_vec_tst

@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/verilogDesign/hw4_3/Waveform.vwf
+source_file = 1, C:/verilogDesign/hw4_3/demul1_2.v
+source_file = 1, C:/verilogDesign/hw4_3/db/DEMUL1_2.cbx.xml
+design_name = DEMUL1_2
+instance = comp, \Y[0]~output , Y[0]~output, DEMUL1_2, 1
+instance = comp, \Y[1]~output , Y[1]~output, DEMUL1_2, 1
+instance = comp, \S~input , S~input, DEMUL1_2, 1
+instance = comp, \DIN~input , DIN~input, DEMUL1_2, 1
+instance = comp, \Y~0 , Y~0, DEMUL1_2, 1
+instance = comp, \Y~1 , Y~1, DEMUL1_2, 1

@@ -1,0 +1,11 @@
+module PRIORITY(
+	input A,
+	input B,
+	input C,
+	input X,
+	input Y,
+	output F);
+	assign F=(x==1'b1)?A:
+				(x==1'b1)?B:
+								C;
+endmodule

@@ -1,0 +1,24 @@
+# do RELATIONAL.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RELATIONAL
+# 
+# Top level modules:
+# 	RELATIONAL
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RELATIONAL_vlg_sample_tst
+# -- Compiling module RELATIONAL_vlg_check_tst
+# -- Compiling module RELATIONAL_vlg_vec_tst
+# 
+# Top level modules:
+# 	RELATIONAL_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.RELATIONAL_vlg_vec_tst 
+# Loading work.RELATIONAL_vlg_vec_tst
+# Loading work.RELATIONAL
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading work.RELATIONAL_vlg_sample_tst
+# Loading work.RELATIONAL_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : RELATIONAL.vt(231)
+#    Time: 1 us  Iteration: 0  Instance: /RELATIONAL_vlg_vec_tst/tb_out

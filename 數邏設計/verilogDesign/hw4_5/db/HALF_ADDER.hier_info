@@ -1,0 +1,7 @@
+|HALF_ADDER
+X => C.IN0
+Y => C.IN1
+S <= <VCC>
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\verilogDesign\hw4_4\simulation\qsim
+vDECODER3_8
+Z1 IZDe0>H?ee3>g_@h;<9]B@0
+Z2 V_:_zlMoP:79FPbzLe>OgQ2
+Z3 dC:\verilogDesign\hw4_4\simulation\qsim
+Z4 w1742192056
+Z5 8DECODER3_8.vo
+Z6 FDECODER3_8.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@d@e@c@o@d@e@r3_8
+!i10b 1
+Z10 !s100 Z`G5[f8XcJ5Dn5L:A<idG0
+!s85 0
+Z11 !s108 1742192057.456000
+Z12 !s107 DECODER3_8.vo|
+Z13 !s90 -work|work|DECODER3_8.vo|
+!s101 -O0
+vDECODER3_8_vlg_check_tst
+!i10b 1
+!s100 =K^0TCO9h0n@YXo9e2eRQ1
+IUeM4J=cVgR0LZS3[NQSDj1
+VOKm:6c4@zJZf=`:d2Uz530
+R3
+Z14 w1742192054
+Z15 8DECODER3_8.vt
+Z16 FDECODER3_8.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1742192057.588000
+Z18 !s107 DECODER3_8.vt|
+Z19 !s90 -work|work|DECODER3_8.vt|
+!s101 -O0
+R8
+n@d@e@c@o@d@e@r3_8_vlg_check_tst
+vDECODER3_8_vlg_sample_tst
+!i10b 1
+!s100 Vgeo@4M2T2i2Bc_WKZX_D0
+IAYbfRbaa:Ym3gbQAKjiPA1
+V`F2d:Z7RzJLX5=T7d4cDZ2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@d@e@c@o@d@e@r3_8_vlg_sample_tst
+vDECODER3_8_vlg_vec_tst
+!i10b 1
+!s100 `gYeehVNN:OM87oREXD3h0
+I0m5jYhoYPfGblfMPYj`<k0
+VON;Y9cK7o0>AVEMCFM3?L1
+R3
+R14
+R15
+R16
+L0 281
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@d@e@c@o@d@e@r3_8_vlg_vec_tst

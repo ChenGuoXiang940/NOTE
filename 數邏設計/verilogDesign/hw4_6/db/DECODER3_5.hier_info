@@ -1,0 +1,29 @@
+|DECODER3_5
+A => Equal0.IN0
+A => Equal1.IN1
+A => Equal2.IN1
+A => Equal3.IN2
+A => Equal4.IN0
+A => Equal5.IN0
+A => Equal6.IN0
+B => Equal0.IN1
+B => Equal1.IN2
+B => Equal2.IN0
+B => Equal3.IN0
+B => Equal4.IN1
+B => Equal5.IN2
+B => Equal6.IN1
+C => Equal0.IN2
+C => Equal1.IN0
+C => Equal2.IN2
+C => Equal3.IN1
+C => Equal4.IN2
+C => Equal5.IN1
+C => Equal6.IN2
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

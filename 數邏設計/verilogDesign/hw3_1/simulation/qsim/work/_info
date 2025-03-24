@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\verilogDesign\hw3_1\simulation\qsim
+vBITWISE
+Z1 ISUJZ>VSgEE53`SiWRU>`12
+Z2 V7JZXX54Ffmc_=F31CX9>43
+Z3 dC:\verilogDesign\hw3_1\simulation\qsim
+Z4 w1741583487
+Z5 8BITWISE.vo
+Z6 FBITWISE.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@b@i@t@w@i@s@e
+!i10b 1
+Z10 !s100 UVYECRoB?0D2<eVh0d4I12
+!s85 0
+Z11 !s108 1741583491.694000
+Z12 !s107 BITWISE.vo|
+Z13 !s90 -work|work|BITWISE.vo|
+!s101 -O0
+vBITWISE_vlg_check_tst
+!i10b 1
+!s100 VK7391<PkU_5I13E;?=i90
+InENO01WcDjK^TR]]I;M^^2
+VT39`SXMfF>B:dBA3GMYkT3
+R3
+Z14 w1741583486
+Z15 8BITWISE.vt
+Z16 FBITWISE.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1741583491.959000
+Z18 !s107 BITWISE.vt|
+Z19 !s90 -work|work|BITWISE.vt|
+!s101 -O0
+R8
+n@b@i@t@w@i@s@e_vlg_check_tst
+vBITWISE_vlg_sample_tst
+!i10b 1
+!s100 `7UH?zFj4dZaghgjX>jn]0
+I]3L_66hWAhZ8gP;ZU<D`d3
+VgDj7UHZKFWc03SAZ]b[O;0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@b@i@t@w@i@s@e_vlg_sample_tst
+vBITWISE_vlg_vec_tst
+!i10b 1
+!s100 a6BRn1j0Ig43VCEbG1oJ;3
+IjMW><e6CYAja8m;@KOg5b0
+V>U1L;EbS4eNbS3i`1zK9_1
+R3
+R14
+R15
+R16
+L0 316
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@b@i@t@w@i@s@e_vlg_vec_tst

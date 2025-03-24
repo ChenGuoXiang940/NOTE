@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\verilogDesign\hw3_5\simulation\qsim
+vPRIORITY
+Z1 IoPBPMEIX:EK[QocZP8ak=0
+Z2 Ve<iHV>BFz4P[1R1B>4iU[0
+Z3 dC:\verilogDesign\hw3_5\simulation\qsim
+Z4 w1741589229
+Z5 8PRIORITY.vo
+Z6 FPRIORITY.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@p@r@i@o@r@i@t@y
+!i10b 1
+Z10 !s100 dI3kl1DZa60EeUEE`U:@i1
+!s85 0
+Z11 !s108 1741589230.354000
+Z12 !s107 PRIORITY.vo|
+Z13 !s90 -work|work|PRIORITY.vo|
+!s101 -O0
+vPRIORITY_vlg_check_tst
+!i10b 1
+!s100 zfhi6l0n>7=zcF]dG0S242
+Ij>V0kA@kmLDcBUO_Lc37C0
+V0lLPH00NZYkP7h>[_>nQS0
+R3
+Z14 w1741589227
+Z15 8PRIORITY.vt
+Z16 FPRIORITY.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z17 !s108 1741589230.490000
+Z18 !s107 PRIORITY.vt|
+Z19 !s90 -work|work|PRIORITY.vt|
+!s101 -O0
+R8
+n@p@r@i@o@r@i@t@y_vlg_check_tst
+vPRIORITY_vlg_sample_tst
+!i10b 1
+!s100 KVU^cEV5gBW_ITZaMzEe72
+I;g=PK022gaJ^@aQNnk6Rf0
+VM<:VzU5aiHIYhJ10V9`W22
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@p@r@i@o@r@i@t@y_vlg_sample_tst
+vPRIORITY_vlg_vec_tst
+!i10b 1
+!s100 ;0iQXMQo`_G=d`hkg_WE]3
+I<_Pm34e@1^T@@kTLE^zgM1
+VfnJ?PkzgXVV=bMSaUI4TO0
+R3
+R14
+R15
+R16
+L0 160
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@p@r@i@o@r@i@t@y_vlg_vec_tst

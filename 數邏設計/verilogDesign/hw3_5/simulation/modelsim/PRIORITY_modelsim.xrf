@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/verilogDesign/hw3_5/PRIORITY.v
+source_file = 1, C:/verilogDesign/hw3_5/Waveform.vwf
+source_file = 1, C:/verilogDesign/hw3_5/Waveform1.vwf
+source_file = 1, C:/verilogDesign/hw3_5/db/PRIORITY.cbx.xml
+design_name = \PRIORITY 
+instance = comp, \Y~input , Y~input, \PRIORITY , 1
+instance = comp, \F~output , F~output, \PRIORITY , 1
+instance = comp, \A~input , A~input, \PRIORITY , 1
+instance = comp, \C~input , C~input, \PRIORITY , 1
+instance = comp, \X~input , X~input, \PRIORITY , 1
+instance = comp, \B~input , B~input, \PRIORITY , 1
+instance = comp, \F~0 , F~0, \PRIORITY , 1
+instance = comp, \F~1 , F~1, \PRIORITY , 1

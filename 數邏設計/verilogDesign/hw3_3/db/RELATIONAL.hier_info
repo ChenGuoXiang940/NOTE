@@ -1,0 +1,23 @@
+|RELATIONAL
+A[0] => Equal0.IN3
+A[0] => Equal1.IN3
+A[1] => Equal0.IN2
+A[1] => Equal1.IN2
+A[2] => Equal0.IN1
+A[2] => Equal1.IN1
+A[3] => Equal0.IN0
+A[3] => Equal1.IN0
+B[0] => Equal0.IN7
+B[0] => Equal1.IN7
+B[1] => Equal0.IN6
+B[1] => Equal1.IN6
+B[2] => Equal0.IN5
+B[2] => Equal1.IN5
+B[3] => Equal0.IN4
+B[3] => Equal1.IN4
+EQV <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+NOT_EQV <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+CEQV <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+CNOT_EQV <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
