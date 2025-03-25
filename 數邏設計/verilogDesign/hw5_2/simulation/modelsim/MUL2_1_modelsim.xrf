@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/verilogDesign/hw5_2/Waveform.vwf
+source_file = 1, C:/verilogDesign/hw5_2/mul2_1.v
+source_file = 1, C:/verilogDesign/hw5_2/db/MUL2_1.cbx.xml
+design_name = MUL2_1
+instance = comp, \F~output , F~output, MUL2_1, 1
+instance = comp, \B~input , B~input, MUL2_1, 1
+instance = comp, \A~input , A~input, MUL2_1, 1
+instance = comp, \S~input , S~input, MUL2_1, 1
+instance = comp, \F~0 , F~0, MUL2_1, 1

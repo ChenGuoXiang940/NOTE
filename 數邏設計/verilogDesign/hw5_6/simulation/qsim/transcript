@@ -1,0 +1,24 @@
+# do PRIORITY.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PRIORITY
+# 
+# Top level modules:
+# 	PRIORITY
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PRIORITY_vlg_sample_tst
+# -- Compiling module PRIORITY_vlg_check_tst
+# -- Compiling module PRIORITY_vlg_vec_tst
+# 
+# Top level modules:
+# 	PRIORITY_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.PRIORITY_vlg_vec_tst 
+# Loading work.PRIORITY_vlg_vec_tst
+# Loading work.PRIORITY
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading work.PRIORITY_vlg_sample_tst
+# Loading work.PRIORITY_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : PRIORITY.vt(156)
+#    Time: 1 us  Iteration: 0  Instance: /PRIORITY_vlg_vec_tst/tb_out

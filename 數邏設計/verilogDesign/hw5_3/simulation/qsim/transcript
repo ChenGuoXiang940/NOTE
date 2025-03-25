@@ -1,0 +1,24 @@
+# do AND_GATE.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AND_GATE
+# 
+# Top level modules:
+# 	AND_GATE
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AND_GATE_vlg_sample_tst
+# -- Compiling module AND_GATE_vlg_check_tst
+# -- Compiling module AND_GATE_vlg_vec_tst
+# 
+# Top level modules:
+# 	AND_GATE_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.AND_GATE_vlg_vec_tst 
+# Loading work.AND_GATE_vlg_vec_tst
+# Loading work.AND_GATE
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading work.AND_GATE_vlg_sample_tst
+# Loading work.AND_GATE_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : AND_GATE.vt(152)
+#    Time: 1 us  Iteration: 0  Instance: /AND_GATE_vlg_vec_tst/tb_out

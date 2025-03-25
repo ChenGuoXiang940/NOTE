@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/verilogDesign/hw5_4/Waveform.vwf
+source_file = 1, C:/verilogDesign/hw5_4/d_ff2.v
+source_file = 1, C:/verilogDesign/hw5_4/db/D_FF2.cbx.xml
+design_name = D_FF2
+instance = comp, \Q~output , Q~output, D_FF2, 1
+instance = comp, \CLK~input , CLK~input, D_FF2, 1
+instance = comp, \D~input , D~input, D_FF2, 1
+instance = comp, \RESET~input , RESET~input, D_FF2, 1
+instance = comp, \Q~reg0 , Q~reg0, D_FF2, 1

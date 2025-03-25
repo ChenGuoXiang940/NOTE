@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/verilogDesign/hw5_3/Waveform.vwf
+source_file = 1, C:/verilogDesign/hw5_3/and_gate.v
+source_file = 1, C:/verilogDesign/hw5_3/db/AND_GATE.cbx.xml
+design_name = AND_GATE
+instance = comp, \F~output , F~output, AND_GATE, 1
+instance = comp, \A~input , A~input, AND_GATE, 1
+instance = comp, \C~input , C~input, AND_GATE, 1
+instance = comp, \B~input , B~input, AND_GATE, 1
+instance = comp, \WideAnd0~0 , WideAnd0~0, AND_GATE, 1

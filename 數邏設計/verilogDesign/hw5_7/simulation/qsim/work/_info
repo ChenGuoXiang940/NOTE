@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\verilogDesign\hw5_7\simulation\qsim
+vENCODER4_2
+Z1 !s100 >5Bf7ZkJD@oAmbCdV6ZAM1
+Z2 II=Jl^C8FB@cJB8DRF>cz>0
+Z3 VWVIALUV=lz@C;eVz4m`TR3
+Z4 dC:\verilogDesign\hw5_7\simulation\qsim
+Z5 w1742799872
+Z6 8ENCODER4_2.vo
+Z7 FENCODER4_2.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ENCODER4_2.vo|
+Z10 o-work work -O0
+Z11 n@e@n@c@o@d@e@r4_2
+!i10b 1
+!s85 0
+Z12 !s108 1742799873.725000
+Z13 !s107 ENCODER4_2.vo|
+!s101 -O0
+vENCODER4_2_vlg_check_tst
+!i10b 1
+!s100 U[WWEZZITlV[fJ30CTJkY3
+IEafKYFY^@VNI]NSDf>WiE3
+Z14 V`Tf[S<[>VNfcBQKYKC>>A2
+R4
+Z15 w1742799871
+Z16 8ENCODER4_2.vt
+Z17 FENCODER4_2.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z18 !s108 1742799873.887000
+Z19 !s107 ENCODER4_2.vt|
+Z20 !s90 -work|work|ENCODER4_2.vt|
+!s101 -O0
+R10
+Z21 n@e@n@c@o@d@e@r4_2_vlg_check_tst
+vENCODER4_2_vlg_sample_tst
+!i10b 1
+Z22 !s100 zfV;CzEhZ8>Y2>6b9KiD63
+Z23 IVVMH_cXIH2WL<3DAGIo9i0
+Z24 V^<N:zWi1fV@;=DV];jAIh0
+R4
+R15
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z25 n@e@n@c@o@d@e@r4_2_vlg_sample_tst
+vENCODER4_2_vlg_vec_tst
+!i10b 1
+!s100 aU@>W]QA5V;Fz`HYWWb@k1
+In:>Ph;VLKR8kGhof?29N70
+Z26 VS^6=OALN[YRjC><1TZo]83
+R4
+R15
+R16
+R17
+L0 179
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z27 n@e@n@c@o@d@e@r4_2_vlg_vec_tst

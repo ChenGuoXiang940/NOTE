@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/verilogDesign/hw5_7/Waveform.vwf
+source_file = 1, C:/verilogDesign/hw5_7/encoder4_2.v
+source_file = 1, C:/verilogDesign/hw5_7/db/ENCODER4_2.cbx.xml
+design_name = ENCODER4_2
+instance = comp, \A~output , A~output, ENCODER4_2, 1
+instance = comp, \B~output , B~output, ENCODER4_2, 1
+instance = comp, \I[1]~input , I[1]~input, ENCODER4_2, 1
+instance = comp, \I[0]~input , I[0]~input, ENCODER4_2, 1
+instance = comp, \I[2]~input , I[2]~input, ENCODER4_2, 1
+instance = comp, \I[3]~input , I[3]~input, ENCODER4_2, 1
+instance = comp, \A~1 , A~1, ENCODER4_2, 1
+instance = comp, \A~2 , A~2, ENCODER4_2, 1
+instance = comp, \B~1 , B~1, ENCODER4_2, 1

@@ -1,0 +1,13 @@
+module MUL3_1(
+    input [2:0]I,
+    input [2:0]S,
+    output reg F
+);
+    always @(I or S)
+        if(s==2'b00)
+            F=I[0];
+        else if(s==2'b01)
+            F=I[1];
+        else if(s==2'b10)
+            F=I[2];
+endmodule
