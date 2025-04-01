@@ -1,0 +1,24 @@
+# do MUL4_1.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUL4_1
+# 
+# Top level modules:
+# 	MUL4_1
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUL4_1_vlg_sample_tst
+# -- Compiling module MUL4_1_vlg_check_tst
+# -- Compiling module MUL4_1_vlg_vec_tst
+# 
+# Top level modules:
+# 	MUL4_1_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.MUL4_1_vlg_vec_tst 
+# Loading work.MUL4_1_vlg_vec_tst
+# Loading work.MUL4_1
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading work.MUL4_1_vlg_sample_tst
+# Loading work.MUL4_1_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : MUL4_1.vt(150)
+#    Time: 1 us  Iteration: 0  Instance: /MUL4_1_vlg_vec_tst/tb_out

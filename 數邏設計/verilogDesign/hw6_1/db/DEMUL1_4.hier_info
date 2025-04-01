@@ -1,0 +1,10 @@
+|DEMUL1_4
+DIN => Y[0].DATAIN
+S[0] <= <GND>
+S[1] <= <GND>
+Y[0] <= DIN.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= <GND>
+Y[2] <= <GND>
+Y[3] <= <GND>
+
+

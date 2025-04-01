@@ -1,0 +1,24 @@
+module COUNTER(
+    input CLK,
+    input RESET,
+    output [2:0]Q
+);
+    reg [3:0]REG;
+    always @(posedge CLK or negedge RESET)
+        begin
+            if(!RESET)
+                REG<={1'b0,3'o1};
+            else
+                case (REG)
+                    {1'b0,3'o1} :REG<={1'b0,3'o5};
+                    {1'b0,3'o5} :REG<={1'b0,3'o3};
+                    {1'b0,3'o3} :REG<={1'b0,3'o7};
+                    {1'b0,3'o7} :REG<={1'b0,3'o2};
+                    {1'b0,3'o2} :REG<={1'b1,3'o7};
+                    {1'b0,3'o7} :REG<={1'b0,3'o4};
+                    {1'b0,3'o4} :REG<={1'b0,3'o1};
+                    default     :REG<={1'b0,3'o1};
+                endcase
+        end
+    assign Q=REG[2:0];
+endmodule

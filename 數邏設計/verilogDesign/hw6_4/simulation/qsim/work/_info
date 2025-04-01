@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\verilogDesign\hw6_4\simulation\qsim
+vMUL4_1
+Z1 Ik58^`<P6VzVaHk`6KH?fP2
+Z2 VEX6;IS@zZ4R8E8Nj:O>Ig3
+Z3 dC:\verilogDesign\hw6_4\simulation\qsim
+Z4 w1743401406
+Z5 8MUL4_1.vo
+Z6 FMUL4_1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@m@u@l4_1
+!i10b 1
+Z10 !s100 3f:H?NOPS^HJJ9;<<1eTD2
+!s85 0
+Z11 !s108 1743401407.871000
+Z12 !s107 MUL4_1.vo|
+Z13 !s90 -work|work|MUL4_1.vo|
+!s101 -O0
+vMUL4_1_vlg_check_tst
+!i10b 1
+!s100 ?T_H>J;zY>hkNkzgOoToF1
+I;6iYFM<01V]hF3JXS;Af[1
+Vk@26zWPbgaoV@fn95;`6j3
+R3
+Z14 w1743401405
+Z15 8MUL4_1.vt
+Z16 FMUL4_1.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1743401408.014000
+Z18 !s107 MUL4_1.vt|
+Z19 !s90 -work|work|MUL4_1.vt|
+!s101 -O0
+R8
+n@m@u@l4_1_vlg_check_tst
+vMUL4_1_vlg_sample_tst
+!i10b 1
+!s100 <hWg]IO5N:29d8OTLTo7b2
+Io18;6oCBfT^nfe3IB5ELL3
+Vf17?DFcCez4F6=GL84FBm1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@m@u@l4_1_vlg_sample_tst
+vMUL4_1_vlg_vec_tst
+!i10b 1
+!s100 3hQ0JE=MNf6lXoFRZ_:HH3
+IH=5e38gMkLHCHH8d8;[260
+VBc8hCaAf_Rc]ZIS=g>Vc_3
+R3
+R14
+R15
+R16
+L0 154
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@m@u@l4_1_vlg_vec_tst

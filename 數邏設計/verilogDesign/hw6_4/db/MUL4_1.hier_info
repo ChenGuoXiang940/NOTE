@@ -1,0 +1,10 @@
+|MUL4_1
+I[0] => F.DATAA
+I[1] => F.DATAB
+I[2] => F.DATAA
+I[3] => F.DATAB
+S[0] => Decoder0.IN0
+S[1] => Decoder1.IN0
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
