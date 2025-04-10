@@ -1,0 +1,39 @@
+C51 COMPILER V9.57.0.0   TEST                                                              04/10/2025 10:58:36 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE TEST
+OBJECT MODULE PLACED IN .\Objects\test.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE test.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\test
+                    -.lst) TABS(2) OBJECT(.\Objects\test.obj)
+
+line level    source
+
+   1          void main(){
+   2   1        unsigned int num=978;
+   3   1        unsigned int TABLE[10];
+   4   1        int i=0;
+   5   1      start:
+   6   1          if (num == 0)
+   7   1              goto end;
+   8   1          TABLE[i] = num % 10;
+   9   1          num /= 10;
+  10   1          i++;
+  11   1          goto start;
+  12   1      
+  13   1      end:
+  14   1          while (1);  // Á×§Kµ{¦¡µ²§ô
+  15   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     55    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      20
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
