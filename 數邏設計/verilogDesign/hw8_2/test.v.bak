@@ -1,0 +1,21 @@
+module test(
+    input CLK,
+    input RESET,
+    output reg [15:0]SEGMENT
+);
+    wire [7:0] BCD;
+    COUNTER A1 (
+        .CLK(CLK),
+        .RESET(RESET),
+        .Q(Q)
+    );
+    BCD_SEVEN A2 (
+        .BCD(BCD[3:0]),
+        .SEGMENT(SEGMENT[7:0])
+    );
+
+    BCD_SEVEN A3 (
+        .BCD(BCD[7:4]),
+        .SEGMENT(SEGMENT[15:8])
+    );
+endmodule
