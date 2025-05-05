@@ -1,0 +1,51 @@
+C51 COMPILER V9.57.0.0   TEST                                                              05/01/2025 12:01:12 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE TEST
+OBJECT MODULE PLACED IN .\Objects\test.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE test.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\test
+                    -.lst) TABS(2) OBJECT(.\Objects\test.obj)
+
+line level    source
+
+   1          #include "stdio.h"
+   2          #include "math.h"
+   3          float f(float x){
+   4   1        float guess=x/2.0f;
+   5   1        float esp=0.001f;
+   6   1        float diff;
+   7   1        do{
+   8   2          float newg=0.5f*(guess+x/guess);
+   9   2          diff=newg-guess;
+  10   2          if(diff<0)diff=-diff;
+  11   2          guess=newg;
+  12   2        }while(diff>esp);
+  13   1        return guess;
+  14   1      }
+  15          void main() {
+  16   1          unsigned char TableA[] = {34, 65, 12, 34, 67, 89, 7, 6, 83, 89};
+  17   1          unsigned char TableB[] = {30, 61, 13, 38, 65, 80, 10, 7, 82, 81};
+  18   1          unsigned int i;
+  19   1          float rmse;
+  20   1          float sum = 0.0;
+  21   1          for (i = 0; i < 10; i++) {
+  22   2              float diff = (float)(TableA[i] - TableB[i]);
+  23   2              sum += diff * diff;
+  24   2          }
+  25   1          rmse = f(sum/10.0f);
+  26   1          printf("RMSE: %f\n", rmse);
+  27   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    368    ----
+   CONSTANT SIZE    =     30    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      50
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
