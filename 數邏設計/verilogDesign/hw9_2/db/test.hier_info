@@ -1,0 +1,13 @@
+|test
+I[0] => ~NO_FANOUT~
+I[1] => pe.IN0
+I[2] => pe.IN1
+I[3] => pe.IN1
+I[4] => pe.IN1
+I[5] => pe.IN1
+I[6] => pe.IN1
+I[7] => pe.IN1
+I[8] => pe.IN1
+pe <= pe.DB_MAX_OUTPUT_PORT_TYPE
+
+

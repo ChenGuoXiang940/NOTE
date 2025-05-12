@@ -1,0 +1,31 @@
+module test(
+    input [7:0] A,
+    input [7:0] B,
+    input [7:0] C,
+    output reg [7:0] Large,
+    output reg [7:0] Middle,
+    output reg [7:0] Small
+);
+    reg [7:0] tempa, tempb, tempc;
+    always @(A or B or C)
+        begin
+            {tempa, tempb, tempc} = {A, B, C};
+            sort2(tempa, tempb);
+            sort2(tempa, tempc);
+            sort2(tempb, tempc);
+            {Large, Middle, Small} = {tempa, tempb, tempc};
+        end
+    task sort2;
+        inout [7:0] a;
+        inout [7:0] b;
+        reg [7:0] temp;
+        begin
+            if (a > b) 
+            begin
+                temp = a;
+                a = b;
+                b = temp;
+            end
+        end
+    endtask
+endmodule

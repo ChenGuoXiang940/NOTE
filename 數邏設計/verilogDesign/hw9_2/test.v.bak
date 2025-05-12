@@ -1,0 +1,16 @@
+module test(
+    input [1:8]i,
+    output reg pe
+);
+    integer j;
+    always @(i)
+        begin
+            pe=1'b0;
+            j=1;
+            while(j<9)
+                begin
+                    pe=pe^i[j];
+                    j=j+1;
+                end
+        end
+endmodule

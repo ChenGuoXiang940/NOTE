@@ -1,0 +1,22 @@
+module test(
+    input [3:0]I,
+    input [1:0]S,
+    output reg F
+);
+    reg [1:0]X;
+    always @(I or S)
+        begin
+            X[0]=MUL2_1(I[1:0],S[0]);
+            X[1]=MUL2_1(I[3:2],S[0]);
+            F=MUL2_1(X,S[1]);
+        end
+function MUL2_1;
+    input [1:0]I;
+    input S;
+    case(S)
+        1'b0:   MUL2_1=I[0];
+        default: MUL2_1=I[1];
+    endcase
+endfunction
+
+endmodule

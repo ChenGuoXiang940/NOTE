@@ -1,0 +1,10 @@
+|test
+I[0] => X[0].DATAA
+I[1] => X[0].DATAB
+I[2] => X[1].DATAA
+I[3] => X[1].DATAB
+S[0] => Decoder0.IN0
+S[1] => Decoder1.IN0
+F <= MUL2_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
