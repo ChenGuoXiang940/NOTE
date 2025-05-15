@@ -1,0 +1,92 @@
+C51 COMPILER V9.57.0.0   TEST                                                              05/15/2025 11:15:36 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE TEST
+OBJECT MODULE PLACED IN .\Objects\test.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE test.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\test
+                    -.lst) TABS(2) OBJECT(.\Objects\test.obj)
+
+line level    source
+
+   1          #include "AT89X52.H"
+   2          sfr Data=0x80;
+   3          sbit speak=P2^6;
+   4          sbit SSLED0=0x90;
+   5          sbit SSLED1=0x91;
+   6          sbit SSLED2=0x92;
+   7          sbit SSLED3=0x93;
+   8          code char r_table[]={0x01,0x02,0x04,0x08};
+   9          code unsigned char Table[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f};
+  10          void Display(int,char);
+  11          void beep(unsigned char);
+  12          void main(){
+  13   1        int step=9990;
+  14   1        char scan=10;
+  15   1        char i=0;
+  16   1        while(1){
+  17   2          Display(step,scan);
+  18   2          if(step==9999){
+  19   3            Display(step,scan);
+  20   3            beep(3);
+  21   3            step = 0;
+  22   3          }
+  23   2          else{
+  24   3              step++;
+  25   3          }
+  26   2        }
+  27   1      }
+  28          void Display(int step,char scan){
+  29   1        unsigned char i;
+  30   1        while(scan--){
+  31   2          SSLED0=SSLED1=SSLED2=SSLED3=1;
+  32   2          i=step%10;
+  33   2          Data=~Table[i];
+  34   2          SSLED0=0;
+  35   2          Delay_ms(1);
+  36   2          
+  37   2          SSLED0=SSLED1=SSLED2=SSLED3=1;
+  38   2          i=(step%100)/10;
+  39   2          Data=~Table[i];
+  40   2          SSLED1=0;
+  41   2          Delay_ms(1);
+  42   2          
+  43   2          SSLED0=SSLED1=SSLED2=SSLED3=1;
+  44   2          i=(step%1000)/100;
+  45   2          Data=~Table[i];
+  46   2          SSLED2=0;
+  47   2          Delay_ms(1);
+  48   2          
+  49   2          SSLED0=SSLED1=SSLED2=SSLED3=1;
+  50   2          i=(step%10000)/1000;
+  51   2          Data=~Table[i];
+  52   2          SSLED3=0;
+  53   2          Delay_ms(1);
+  54   2          }
+C51 COMPILER V9.57.0.0   TEST                                                              05/15/2025 11:15:36 PAGE 2   
+
+  55   1      }
+  56          void beep(unsigned char i){
+  57   1        unsigned char j;
+  58   1        while(i--){
+  59   2          for(j=0;j<123;j++){
+  60   3            speak=!speak;
+  61   3            Delay_ms(2);
+  62   3          }
+  63   2          Delay_ms(200);
+  64   2          Display(9999,10);
+  65   2        }
+  66   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    314    ----
+   CONSTANT SIZE    =     14    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       6
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

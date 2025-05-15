@@ -1,0 +1,38 @@
+C51 COMPILER V9.57.0.0   TEST                                                              05/15/2025 12:02:57 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE TEST
+OBJECT MODULE PLACED IN .\Objects\test.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE test.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\test
+                    -.lst) TABS(2) OBJECT(.\Objects\test.obj)
+
+line level    source
+
+   1          #include "at89x52.h"
+   2          #include "font.h"
+   3          sfr Data=0x80;
+   4          sfr Scan=0x90;
+   5          void main(){
+   6   1        unsigned char i;
+   7   1        unsigned char repeat;
+   8   1        unsigned char boo;
+   9   1        unsigned char mask;
+  10   1        Scan=0x7f;
+  11   1        while(1){
+  12   2          mask=0xff;
+  13   2          for(boo=0;boo<8;boo++){
+  14   3            for(repeat=0;repeat<20;repeat++){
+  15   4              for(i=0;i<8;i++){
+  16   5                Data=font[i]|mask;
+*** ERROR C202 IN LINE 16 OF test.c: 'font': undefined identifier
+  17   5                Delay_ms(1);
+  18   5                Data=0xff;
+  19   5                Scan=RR8(Scan);
+  20   5              }
+  21   4            }
+  22   3            mask=mask<<1;
+  23   3          }
+  24   2        }
+  25   1      }
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
